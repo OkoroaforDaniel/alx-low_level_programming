@@ -8,19 +8,21 @@ int main(void)
 {
 	int alphabet;
 	alphabet = 'a';
-	while(alphabet <= 'z');
+	while (alphabet <= 'z');
 	{
 		if (alphabet == 'e')
 		{
 		}
 		else 
-			if(alphabet == 'q')
+			if (alphabet == 'q')
 		{
 		}
 		else
+		{
 			putchar(alphabet);
-			alphabet++;
+		alphabet++;
+		}
 	}
-		putchar("\n");
+		putchar('\n');
 		return (0);
 }
