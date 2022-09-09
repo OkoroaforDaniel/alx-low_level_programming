@@ -1,29 +1,19 @@
 #include <stdio.h>
+
 /**
-* main - the program run from here
-*
-* Return:return zero if no erro and non zero if error
+*main-program entry point.
+*Return:0 if no error, non zero if error.
 */
 int main(void)
 {
-int alphabet;
+char i;
 
-alphabet = 'a';
-while (alphabet <= 'z')
+for (i = 'a'; i <= 'z'; i++)
 {
-	if (alphabet == 'e')
-{
+if (i == 'e' || i == 'q')
+continue;
+	putchar(i);
 }
-else 
-	if (alphabet == 'q')
-{
-}
-else
-{
-	putchar(alphabet);
-	alphabet++;
-}
-}
-	putchar("\n");
-	return (0);
+	putchar('\n');
+return (0);
 }
