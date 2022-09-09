@@ -8,7 +8,7 @@ int main(void)
 {
 	int alphabet;
 	alphabet = 'a';
-	While(alphabet <= 'z')
+	while(alphabet <= 'z');
 	{
 		if (alphabet == 'e')
 		{
@@ -18,10 +18,9 @@ int main(void)
 		{
 		}
 		else
-		{
 			putchar(alphabet);
 			alphabet++;
-		}
+	}
 		putchar("\n");
 		return (0);
 }
