@@ -3,10 +3,11 @@
 /**
 *main - Entry point
 *
-*Return: program should return 0
+*Return:  0 nothing, return void
 */
 
 int main(void)
+
 {
 	_putchar('_');
 	_putchar('p');
