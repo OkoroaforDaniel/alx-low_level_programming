@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
-* main - check the code
-*
-* Return: Always 0.
+* main - print_alphabet
+* Return: 0
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	char n = 'a';
+	char c = 'a';
 
-	while(n <= 'z')
-	{
-		_putchar(n);
-			n++;
+	while (c <= 'z')
+	{				{
+	_putchar(c);
+	c++;
 
 	}
 	_putchar('\n');
