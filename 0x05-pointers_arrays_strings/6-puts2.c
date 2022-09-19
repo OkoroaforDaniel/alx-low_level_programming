@@ -1,28 +1,23 @@
 #include "main.h"
 
 /**
- * rev_string - reverse string
- * @s: param
+ * puts2 - prints one char out of 2 of a string.
+ * @str: input string.
+ * Return: no return.
  */
-
-void rev_string(char *s)
+void puts2(char *str)
 {
-	int i, size, half;
-	char first, last;
+	int count = 0;
 
-	i = 0;
-	while (s[i] != '\0')
+	while (count >= 0)
 	{
-		i++;
-	}
-	size = i - 1;
-	half = size / 2;
-	while (half >= 0)
-	{
-		first = s[size - half];
-		last = s[half];
-		s[half] = first;
-		s[size - half] = last;
-		half--;
+		if (str[count] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		if (count % 2 == 0)
+			_putchar(str[count]);
+		count++;
 	}
 }
